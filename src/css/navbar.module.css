@@ -1,0 +1,423 @@
+/* Variable CSS Start */
+:root {
+    --color-primary: #025162;
+    --color-secondary: #eadfd8;
+    --color-crimson-saffron: #e75313;
+    --color-white: #ffffff;
+    --color-text: #414141;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    color: var(--color-text);
+}
+
+/* Background color */
+.bg-primary {
+    background: var(--color-primary);
+}
+
+.bg-secondary {
+    background: var(--color-secondary);
+}
+
+.bg-crimson-saffron {
+    background: var(--color-crimson-saffron);
+}
+
+.bg-white {
+    background: var(--color-white);
+}
+
+.bg-text {
+    background: var(--color-text);
+}
+
+/* Text color */
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+.text-crimson-saffron {
+    color: var(--color-crimson-saffron);
+}
+
+.text-main {
+    color: var(--color-text);
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b,
+p {
+    font-family: "Manrope", sans-serif;
+}
+
+
+
+
+
+
+/* Main CSS */
+/* .banner_container {
+    position: relative;
+} */
+
+/* Navbar 1 */
+
+.navbar_1 {
+    padding-top: 40px;
+    position: relative;
+    z-index: 998;
+}
+
+.nav_logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_logo_left a {
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav_logo_left span {
+    margin: 0;
+}
+
+.logo_left_bold {
+    font-weight: 800;
+}
+
+.nav_logo_right {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.contact_msg,
+.welcome_msg {
+    margin-right: 30px;
+    color: var(--color-text);
+}
+
+.nav_logo_right .help_navbar {
+    margin-right: 30px;
+}
+
+.nav_logo_right a {
+    text-decoration: none;
+    color: var(--color-text);
+    margin: 0;
+    margin-left: 0px;
+}
+
+/* Navbar 2 */
+
+.navbar_2 {
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 998;
+}
+
+.nav_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_links_left a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-right: 30px;
+}
+
+.nav_links_left a:hover {
+    color: var(--color-crimson-saffron);
+    letter-spacing: 2px;
+    transition: letter-spacing 0.8s ease;
+}
+
+.nav_links_left .active {
+    color: var(--color-crimson-saffron);
+}
+
+.nav_links_right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.nav_links_right svg {
+    color: var(--color-text);
+    margin-left: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.nav_links_search input {
+    width: 100%;
+    border: 1px solid #00000091;
+    border-radius: 4px;
+}
+
+.nav_links_search input:focus {
+    outline: 1px solid var(--color-primary);
+}
+
+
+/* Responsive Navbar */
+
+.res_nav {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    top: 40px;
+    right: 20px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    background-color: var(--color-secondary);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 40px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--color-primary);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: var(--color-text);
+    letter-spacing: 2px;
+    transition: letter-spacing 0.8s ease;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.menuIconClass {
+    font-size: 30px;
+    cursor: pointer;
+    color: #025162;
+    display: none;
+}
+
+.wishlist_modal {
+    width: fit-content;
+    height: 300px;
+    overflow-y: auto;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 10px 20px 20px 20px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 80px 30px;
+}
+
+.wishlist_modal_title h1 {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.empty_wishlist_message {
+    margin-top: 100px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-primary);
+}
+
+.product_details {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    overflow-y: auto;
+}
+
+.product_image {
+    width: 140px;
+    height: 120px;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.product_name a {
+    text-decoration: none;
+    color: var(--color-primary);
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.product_price {
+    margin-top: -10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.add_to_cart_button,
+.remove_from_wishlist_button {
+    font-size: 20px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add_to_cart_button {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.add_to_cart_quantity {
+    display: flex;
+    align-items: center;
+}
+
+.add_to_cart_quantity button {
+    font-size: 20px;
+    padding: 4px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.add_to_cart_quantity input {
+    width: 50px;
+    padding: 8px 16px;
+    margin: 0px 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.add_to_cart_quantity input:focus {
+    outline: none;
+}
+
+.remove_from_wishlist_button {
+    background-color: #fff;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+/* Media CSS Start */
+@media (min-width: 1400px) {
+    .res_nav {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {
+    .nav_logo_right a {
+        margin-left: 15px;
+    }
+
+    .nav_logo_right {
+        align-items: flex-end;
+    }
+
+    .nav_links_left a {
+        margin-right: 25px;
+    }
+
+    .nav_links_right svg {
+        margin-left: 25px;
+    }
+
+    .res_nav {
+        display: block;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact_msg,
+    .nav_logo_right a {
+        display: none;
+    }
+
+    .welcome_msg {
+        display: block;
+    }
+
+    .nav_links_left a {
+        display: none;
+    }
+
+    .menuIconClass {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidenav {
+        width: 0px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar_1 {
+        padding-top: 30px;
+    }
+
+    .navbar_2 {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 376px) {
+    .nav_logo_left a {
+        font-size: 1.75rem;
+    }
+}

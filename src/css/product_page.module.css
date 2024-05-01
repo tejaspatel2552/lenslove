@@ -1,0 +1,235 @@
+/* Variable CSS Start */
+:root {
+    --color-primary: #025162;
+    --color-secondary: #eadfd8;
+    --color-crimson-saffron: #e75313;
+    --color-white: #ffffff;
+    --color-text: #414141;
+    --container: 1320px;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    color: var(--color-text);
+}
+
+/* Background color */
+.bg-primary {
+    background: var(--color-primary);
+}
+
+.bg-secondary {
+    background: var(--color-secondary);
+}
+
+.bg-crimson-saffron {
+    background: var(--color-crimson-saffron);
+}
+
+.bg-white {
+    background: var(--color-white);
+}
+
+.bg-text {
+    background: var(--color-text);
+}
+
+/* Text color */
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+.text-crimson-saffron {
+    color: var(--color-crimson-saffron);
+}
+
+.text-main {
+    color: var(--color-text);
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b,
+p {
+    font-family: "Manrope", sans-serif;
+}
+
+
+/* Main CSS */
+.product_page_container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product_page_image_container img {
+    width: 370px;
+    height: 350px;
+    border-radius: 4px;
+    box-shadow: 0px 10px 20px 0px #29292a1c;
+}
+
+.product_page_thumbnail_container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.product_page_brand_wish {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product_page_brand_wish i {
+    margin: -12px 0px 0px 0px;
+    font-size: 22px;
+}
+
+.product_page_text p {
+    margin-top: 20px;
+    color: var(--color-text);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.product_page_price span {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.product_page_price strike {
+    margin-right: 20px;
+}
+
+.btn_add_checkout {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+}
+
+.add_to_cart_button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    color: #fff;
+}
+
+.add_to_cart_button:hover {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+.checkout_button {
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--color-crimson-saffron);
+    border: 2px solid var(--color-crimson-saffron);
+    color: #fff;
+}
+
+.checkout_button:hover {
+    background-color: transparent;
+    color: var(--color-crimson-saffron);
+    border: 2px solid var(--color-crimson-saffron);
+}
+
+.add_to_cart_quantity {
+    display: flex;
+    align-items: center;
+}
+
+.add_to_cart_quantity button {
+    font-size: 20px;
+    padding: 4px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.add_to_cart_quantity input {
+    width: 50px;
+    padding: 6px 16px;
+    margin: 0px 5px;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+}
+
+.add_to_cart_quantity input:focus {
+    outline: none;
+}
+
+/* Media CSS */
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {
+    .product_page_image_container img {
+        width: 320px;
+        height: 330px;
+    }
+}
+
+@media (max-width: 992px) {
+    .product_page_image_container img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .product_page_container img {
+        text-align: center;
+    }
+
+    .product_page_brand_wish {
+        margin-top: 40px;
+    }
+
+    .btn_add_checkout {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product_page_image_container img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .product_page_image_container img {
+        height: 330px;
+    }
+}
+
+@media (max-width: 376px) {
+    .product_page_image_container img {
+        height: 250px;
+    }
+}

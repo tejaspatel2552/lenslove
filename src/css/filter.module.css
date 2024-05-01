@@ -1,0 +1,373 @@
+/* Variable CSS Start */
+:root {
+    --color-primary: #025162;
+    --color-secondary: #eadfd8;
+    --color-crimson-saffron: #e75313;
+    --color-white: #ffffff;
+    --color-text: #414141;
+    --container: 1320px;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    color: var(--color-text);
+}
+
+/* Background color */
+.bg-primary {
+    background: var(--color-primary);
+}
+
+.bg-secondary {
+    background: var(--color-secondary);
+}
+
+.bg-crimson-saffron {
+    background: var(--color-crimson-saffron);
+}
+
+.bg-white {
+    background: var(--color-white);
+}
+
+.bg-text {
+    background: var(--color-text);
+}
+
+/* Text color */
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+.text-crimson-saffron {
+    color: var(--color-crimson-saffron);
+}
+
+.text-main {
+    color: var(--color-text);
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b,
+p {
+    font-family: "Manrope", sans-serif;
+}
+
+/* CSS */
+.filter_container {
+    width: 210px;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.filter_title {
+    margin-left: 15px;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+
+.filter_title p {
+    color: var(--color-primary);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.filter_section_1,
+.filter_section_2,
+.filter_section_3,
+.filter_section_4,
+.filter_section_5,
+.filter_section_6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px 0px #29292A12;
+    width: 100px;
+    height: 140px;
+    background-color: var(--color-white);
+    border-radius: 4px;
+}
+
+.filter_img_1,
+.filter_img_2,
+.filter_img_3,
+.filter_img_4,
+.filter_img_5,
+.filter_img_6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-secondary);
+    width: 70px;
+    height: 70px;
+    border-radius: 4px;
+}
+
+.filter_img_1 img,
+.filter_img_2 img {
+    width: 50px;
+    height: 41.32px;
+}
+
+.filter_img_1,
+.filter_img_2,
+.filter_img_3,
+.filter_img_4,
+.filter_img_5,
+.filter_img_6 img:not(.filter_selected) {
+    opacity: 0.5;
+}
+
+.filter_img_1.filter_selected,
+.filter_img_2.filter_selected,
+.filter_img_3.filter_selected,
+.filter_img_4.filter_selected,
+.filter_img_5.filter_selected,
+.filter_img_6.filter_selected img {
+    opacity: 1;
+}
+
+.filter_img_3 img {
+    width: 55px;
+    height: 22px;
+}
+
+.filter_img_4 img {
+    width: 55px;
+    height: 29.65px;
+}
+
+.filter_img_5 img {
+    width: 55px;
+    height: 19.92px;
+}
+
+.filter_img_6 img {
+    width: 55px;
+    height: 23.4px;
+}
+
+.filter_text_1 p,
+.filter_text_2 p,
+.filter_text_3 p,
+.filter_text_4 p,
+.filter_text_5 p,
+.filter_text_6 p {
+    padding-top: 10px;
+    text-align: center;
+    color: var(--color-primary);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.filter_image {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/* Checkbox Section */
+
+.checkbox_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.checkbox_container label {
+    color: var(--color-primary);
+    font-size: 16.73px;
+    font-weight: 400;
+}
+
+.checkbox_container input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--color-primary);
+    border-radius: 0;
+}
+
+.checkbox_container input[type="checkbox"]:checked {
+    background-image: url("../images/check_icon.svg");
+    background-size: 70% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Gender Section */
+.gender_section {
+    margin-top: 25px;
+    padding: 20px 0px 20px 20px;
+    box-shadow: 0px 10px 20px 0px #29292A12;
+    width: 210px;
+    height: auto;
+    background-color: var(--color-white);
+    border-radius: 4px;
+}
+
+.gender_title p {
+    color: var(--color-primary);
+    font-size: 25.09px;
+    font-weight: 600;
+}
+
+/* Frame Color Section */
+.frame_color_section {
+    margin-top: 25px;
+    padding: 20px 0px 20px 20px;
+    box-shadow: 0px 10px 20px 0px #29292A12;
+    width: 210px;
+    height: auto;
+    background-color: var(--color-white);
+    border-radius: 4px;
+}
+
+.frame_color_title p {
+    color: var(--color-primary);
+    font-size: 25.09px;
+    font-weight: 600;
+}
+
+/* Frame Size Section */
+.frame_size_section {
+    margin-top: 25px;
+    padding: 20px 0px 20px 20px;
+    box-shadow: 0px 10px 20px 0px #29292A12;
+    width: 210px;
+    height: auto;
+    background-color: var(--color-white);
+    border-radius: 4px;
+}
+
+.frame_size_title p {
+    color: var(--color-primary);
+    font-size: 25.09px;
+    font-weight: 600;
+}
+
+/* Price Section */
+.price_section {
+    margin-top: 25px;
+    padding: 20px 0px 20px 20px;
+    box-shadow: 0px 10px 20px 0px #29292A12;
+    width: 210px;
+    height: auto;
+    background-color: var(--color-white);
+    border-radius: 4px;
+}
+
+.price_section hr {
+    color: var(--color-primary);
+    margin-right: 20px;
+}
+
+.price_title p {
+    color: var(--color-primary);
+    font-size: 25.09px;
+    font-weight: 600;
+}
+
+.price_slider {
+    margin-right: 20px;
+}
+
+.price_slider_2 span {
+    border: 1px solid var(--color-primary);
+    padding: 5px 10px 5px 10px;
+}
+
+.price_arrow {
+    margin-left: 10px;
+    border: 1px solid var(--color-primary);
+}
+
+
+/* Brand Section */
+.brand_section {
+    margin-top: 25px;
+    padding: 20px 0px 20px 20px;
+    box-shadow: 0px 10px 20px 0px #29292A12;
+    width: 210px;
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: var(--color-white);
+    border-radius: 4px;
+}
+
+.brand_filter_search input {
+    width: 85%;
+    border: 1px solid #00000018;
+    border-radius: 4px;
+}
+
+.brand_filter_search input:focus {
+    outline: 1px solid var(--color-primary);
+}
+
+.brand_section hr {
+    color: var(--color-primary);
+    margin-right: 20px;
+}
+
+.brand_title p {
+    color: var(--color-primary);
+    font-size: 25.09px;
+    font-weight: 600;
+}
+
+.more_brand h2 {
+    color: var(--color-primary);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.more_brand svg {
+    margin-left: 30px;
+}
+
+/* Media CSS */
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {
+    .filter_container {
+        margin-left: 20px;
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 376px) {}

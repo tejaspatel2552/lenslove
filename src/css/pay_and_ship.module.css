@@ -1,0 +1,239 @@
+/* Variable CSS Start */
+:root {
+    --color-primary: #025162;
+    --color-secondary: #eadfd8;
+    --color-crimson-saffron: #e75313;
+    --color-white: #ffffff;
+    --color-text: #414141;
+    --container: 1320px;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    color: var(--color-text);
+}
+
+/* Background color */
+.bg-primary {
+    background: var(--color-primary);
+}
+
+.bg-secondary {
+    background: var(--color-secondary);
+}
+
+.bg-crimson-saffron {
+    background: var(--color-crimson-saffron);
+}
+
+.bg-white {
+    background: var(--color-white);
+}
+
+.bg-text {
+    background: var(--color-text);
+}
+
+/* Text color */
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+.text-crimson-saffron {
+    color: var(--color-crimson-saffron);
+}
+
+.text-main {
+    color: var(--color-text);
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b,
+p {
+    font-family: "Manrope", sans-serif;
+}
+
+/* Main CSS */
+
+/* Empty Cart */
+
+.cart_empty {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart_empty svg {
+    color: var(--color-text);
+    width: 120px;
+    height: 120px;
+}
+
+.cart_empty h1 {
+    margin-top: 10px;
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.cart_empty a {
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 8px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    color: #fff;
+}
+
+.cart_empty a:hover {
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+/* Main Cart */
+
+.cart_container {
+    margin: 50px 0px 200px 0px;
+}
+
+.back_shop {
+    margin-bottom: 20px;
+}
+
+.back_shop a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.back_shop svg {
+    margin-right: 10px;
+}
+
+.cart_title {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart_title_name {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.shipping_form {
+    border: 1px solid #00000039;
+    border-radius: 12px;
+    padding: 30px;
+    margin-right: 20px;
+}
+
+.input_tag {
+    margin-bottom: 15px;
+}
+
+.input_tag:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+/* Bill Detail */
+
+.bill_detail {
+    margin-top: 20px;
+}
+
+.bill_title h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.quantity_price {
+    border: 1px solid #00000039;
+    border-radius: 12px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.quantity_price_flex {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coupon_button:hover {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+.confirmorder_button {
+    display: block;
+    text-decoration: none;
+    width: 50%;
+    text-align: center;
+    padding: 8px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--color-crimson-saffron);
+    border: 2px solid var(--color-crimson-saffron);
+    color: #fff;
+}
+
+.confirmorder_button:hover {
+    background-color: transparent;
+    color: var(--color-crimson-saffron);
+    border: 2px solid var(--color-crimson-saffron);
+}
+
+/* Media CSS */
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {
+    .payment_form {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+    .cart_title_name {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 376px) {}

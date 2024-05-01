@@ -1,0 +1,207 @@
+/* Variable CSS Start */
+:root {
+    --color-primary: #025162;
+    --color-secondary: #eadfd8;
+    --color-crimson-saffron: #e75313;
+    --color-white: #ffffff;
+    --color-text: #414141;
+    --container: 1320px;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    color: var(--color-text);
+}
+
+/* Background color */
+.bg-primary {
+    background: var(--color-primary);
+}
+
+.bg-secondary {
+    background: var(--color-secondary);
+}
+
+.bg-crimson-saffron {
+    background: var(--color-crimson-saffron);
+}
+
+.bg-white {
+    background: var(--color-white);
+}
+
+.bg-text {
+    background: var(--color-text);
+}
+
+/* Text color */
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+.text-crimson-saffron {
+    color: var(--color-crimson-saffron);
+}
+
+.text-main {
+    color: var(--color-text);
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b,
+p {
+    font-family: "Manrope", sans-serif;
+}
+
+.our_advice_head {
+    margin-top: 130px;
+    margin-bottom: 100px;
+}
+
+.our_advice_head h1 {
+    text-align: center;
+    color: var(--color-primary);
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.headline_1,
+.headline_2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.headline_1_img img,
+.headline_2_img img {
+    width: 100%;
+    height: 634px;
+}
+
+.headline_1_details,
+.headline_2_details {
+    padding-left: 100px;
+    padding-right: 150px;
+}
+
+.headline_1_head p,
+.headline_2_head p {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--color-text);
+}
+
+.headline_1_text p,
+.headline_2_text p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-text);
+}
+
+.headline_1_readmore p,
+.headline_2_readmore p {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-crimson-saffron);
+}
+
+.headline_1_readmore svg,
+.headline_2_readmore svg {
+    margin-left: 10px;
+}
+
+
+/* Responsive Media */
+
+@media (max-width: 1400px) {}
+
+@media (min-width: 1200px) {}
+
+@media (max-width: 992px) {
+    .our_advice_head h1 {
+        font-size: 48px;
+    }
+
+    .our_advice_head {
+        margin-top: 100px;
+        margin-bottom: 90px;
+    }
+
+    .our_advice_head h1 {
+        font-size: 60px;
+    }
+
+    .headline_1_img img,
+    .headline_2_img img {
+        width: 100%;
+        height: 800px;
+    }
+
+    .headline_1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headline_2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .headline_1_details,
+    .headline_2_details {
+        padding: 50px 0px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .headline_1_img img,
+    .headline_2_img img {
+        width: 100%;
+        height: 600px;
+    }
+}
+
+@media (max-width: 576px) {
+
+
+    .headline_1_img img,
+    .headline_2_img img {
+        width: 100%;
+        height: 370px;
+    }
+
+    .headline_1_head p,
+    .headline_2_head p {
+        font-size: 34px;
+    }
+
+    .headline_1_text p,
+    .headline_2_text p {
+        font-size: 16px;
+    }
+
+    .headline_1_readmore p,
+    .headline_2_readmore p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 376px) {
+}
